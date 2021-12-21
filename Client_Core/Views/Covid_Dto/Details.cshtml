@@ -1,0 +1,48 @@
+﻿@model Client_Core.Models.Covid_Dto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Covid_Dto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Province_State)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Province_State)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country_Region)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country_Region)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Confirmed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Confirmed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Deaths)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Deaths)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Recovered)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Recovered)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
